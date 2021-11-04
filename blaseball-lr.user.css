@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           Blaseball LR
+@namespace      github.com/absotively
+@version        1.0.0
+@description    Put L and R on teams on the new bets page
+@author         Absotively
+==/UserStyle== */
+
+@-moz-document url("https://www.blaseball.com/bets/new") {
+.Bet-List-MatchUps-Group .Bet-List-MatchUps-Team::after {
+  content: "R";
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 3px;
+  left: 6px;
+  opacity: 0.6;
+}
+
+.Bet-List-MatchUps-Group .Bet-List-MatchUps-Team:first-child::after {
+  content: "L";
+}
+
+}
